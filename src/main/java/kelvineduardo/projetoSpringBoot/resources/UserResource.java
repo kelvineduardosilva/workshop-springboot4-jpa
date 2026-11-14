@@ -27,6 +27,6 @@ public class UserResource {
 	@GetMapping(value="/{id}")
 	public User findById(@PathVariable Long id){
 		User user = service.findById(id);
-		return user;
+		return user; //Podemos retornar direto dessa forma porem eu tenho menos controle da resposta http.
 	}
 }
