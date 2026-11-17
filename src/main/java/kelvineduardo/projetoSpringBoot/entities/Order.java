@@ -29,7 +29,7 @@ public class Order implements Serializable{
 	
 	private Integer orderStatus;
 	
-	@ManyToOne // diz pro jpa que esse atributo vai ser uma chave estrangeira no banco
+	@ManyToOne // diz pro jpa que esse atributo faz parte de um relacionamento muitos pra muitos
 	@JoinColumn(name = "cliente_id") // define o nome da chave estrangeira na tabela
 	private User client; //um pedido tem um usuario.
 	
